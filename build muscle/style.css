@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav{
+    width: 100%;
+    margin: 0 ;
+    font-family: sans-serif;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+nav h2{
+    color: black;
+    text-shadow: 2px  0px 0px white,
+    0px  2px 0px white,
+   -2px  0px 0px white,
+    0px -2px 0px white;;
+}
+
+nav .logo{
+    display: flex;
+    align-items: center;
+}
+
+nav .logo i{
+    height: 50px;
+    margin-right: 10px ;
+    padding: 0px 5px;
+    transition: transform 1s;
+}
+
+nav .logo i:hover{
+    transform: rotate(-40deg);
+}
+
+nav a{
+    display: inline-block;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    padding: 8px 4px;
+    top: 12px;
+}
+
+nav ul a{
+    font-weight: 600;
+    padding-right: 10px;
+    margin: 0 20px;
+    color: gold;
+    border: 1px solid gold;
+    border-radius: 4px;
+    backdrop-filter: blur(1px);
+    transition: background-color 0.3s;
+}
+
+nav ul a:hover{
+    color: white;
+    background-color: gold;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1544033527-b192daee1f5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header h1{
+    font-size: 66px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow:  2px  0px 0px black,
+    0px  2px 0px black,
+   -2px  0px 0px black,
+    0px -2px 0px black;
+    text-align: center;
+    color: gold;
+    border: solid 2px gold;
+    box-shadow: 1px 1px 4px 4px white inset;
+    backdrop-filter: blur(1px);
+    margin: auto;
+    padding: 8px 22px;
+}
+
+.header p{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: gold;
+    text-align: center;
+    margin: auto;
+}
+
+
+.container{
+    background-color: #cedde0;
+    background-size: cover;
+    padding: 30px;
+}
+
+.container li{
+    background-color: #a2b1ca;
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: fit-content;
+    margin: 6px 30px;
+    padding: 2px 2px;
+    list-style: initial;
+}
+
+.container li a{
+    color: black;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+
+.container li a:hover{
+    padding: 19px 18px;
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+}
+
+
+
+.footer{
+    background-color: darkgray;
+    color: black;
+    text-align: center;
+}
+
+.footer h2{
+    font-size: 20px;
+    
+}
+
+.footer p{
+    font-size: 18px;
+}
+
+.footer ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer ul li{
+    margin: auto 10px;
+}
+
+.footer ul li a i{
+    font-size: 24px;    
+}
+
+select{font-size: 14px;
+}
+
+
+
+@media(max-width:700px){
+    nav{
+        flex-direction: column;
+        padding: 10px 0px;
+
+    }
+    .container{
+        justify-content: center;
+        padding-left: 100px;
+     }
+}
+
